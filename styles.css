@@ -1,0 +1,109 @@
+/* Fondo de página */
+body {
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo llamativo para <h1> */
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3.5rem;
+  color: #ff69b4; /* rosado fuerte */
+  text-shadow: 0 0 8px #ffb6c1, 0 0 12px #fff;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  animation: brillo 3s infinite alternate;
+}
+
+/* Animación de brillo suave */
+@keyframes brillo {
+  from {
+    text-shadow: 0 0 8px #ffb6c1, 0 0 12px #fff;
+  }
+  to {
+    text-shadow: 0 0 14px #ff1493, 0 0 18px #ffffff;
+  }
+}
+
+/* Botón llamativo */
+.btn-primary {
+  background-color: #ff5733;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #ff3d00;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cards personalizadas */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(103, 58, 183, 0.2);
+  border: 2px solid #673ab7;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header vibrante */
+header {
+  background-color: #c2185b !important;
+  color: white;
+}
+
+/* Collapse animado */
+.card-body {
+  background-color: #fff8e1;
+}
+
+/* Footer limpio y elegante */
+footer {
+  background-color: #eeeeee;
+  color: #444;
+}
+
+footer a {
+  color: #c2185b;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+  body {
+    background: #fff3e0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+/* Estilo especial para títulos de tarjetas <h3> */
+.card-title {
+  font-family: 'Lobster', cursive;
+  color: #d63384; /* rosado fucsia */
+  font-size: 1.8rem;
+  text-shadow: 0 0 6px #f8bbd0;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card-title:hover {
+  transform: scale(1.05);
+  color: #ad1457;
+}
